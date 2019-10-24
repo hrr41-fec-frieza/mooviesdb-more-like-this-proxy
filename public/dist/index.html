@@ -23,9 +23,17 @@
   <script src="http://localhost:3030/bundle.js"></script>
 
   <script>
-    // ReactDOM.render(<App />, document.getElementById('top-video-player'));
-    // ReactDOM.render(<App />, document.getElementById('photoCarousel'));
-    // ReactDOM.render(<Main />, document.getElementById('morelikethis'));
+    ReactDOM.render(
+    React.createElement(App), document.getElementById("top-video-player")
+      );
+
+    ReactDOM.render(
+        React.createElement(App), document.getElementById("photoCarousel")
+      );
+
+    ReactDOM.render(
+        React.createElement(Main), document.getElementById("morelikethis")
+      );
 
   </script>
 </body>
